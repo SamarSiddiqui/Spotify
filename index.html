@@ -15,8 +15,6 @@
 
 <body>
    <div class="main-container">
-      <!-- <header class="header"></header> -->
-
       <!-- SideMenu Starts Here -->
       <aside class="aside">
          <div class="aside-upper">
@@ -54,7 +52,7 @@
                <button>Playlists</button>
                <button>Artists</button>
                <button>Albums</button>
-               <button>Podcast & Shows</button>
+               <button>Podcast</button>
             </div>
 
             <div class="playlist-section">
@@ -217,6 +215,7 @@
       </aside>
 
       <!-- SideMenu Ends Here -->
+
       <main class="content-explorer">
          <header class="header">
             <div class="left-side">
@@ -224,14 +223,14 @@
                <i class="fa-solid fa-angle-right"></i>
             </div>
             <div class="right-side">
-               <button class="premBtn">Explore Premium</button>
+               <button class="premBtn" id="premBtn">Explore Premium</button>
                <button class="installBtn"><i class="fa-regular fa-circle-down"></i>Install App</button>
                <i class="fa-regular fa-bell" id="bell"></i>
                <div class="header-dp"><img src="img/profileDp.jpeg" alt=""></div>
             </div>
          </header>
          <!-- PlayListOneStartHere -->
-         <div class="playlist-container">
+         <div class="playlist-container" id="playlistContainer">
             <div class="greet-heading">
                <h3>Good Evening</h3>
             </div>
@@ -273,284 +272,13 @@
                   <h3>Taylor Swift</h3>
                </div>
             </div>
-            <!-- PlaylistBoxTwoStarts -->
 
-            <div class="playlistBox-two playlistBoxes">
-               <div class="playlist2-heading playlistHeadings">
-                  <h3>Your top mixes</h3>
-                  <h5>Show all</h5>
-               </div>
-               <div class="playlist2-boxes playlistContainers">
-                  <div class="playlist2Box">
-                     <div class="playlist2-photo">
-                        <img src="img/gatieMix.jpeg" alt="">
-                     </div>
-                     <div class="playlist2-info">
-                        <h3>Ali Gatie Mix</h3>
-                        <p><a href="">Lewis Capaldi</a>, <a href="">Eminem</a>, <a href="">Tyla Jane</a> and <a
-                              href="">Ruth B</a>.</p>
-                     </div>
-                  </div>
-                  <div class="playlist2Box ">
-                     <div class="playlist2-photo">
-                        <img src="img/aurMix.jpeg" alt="">
-                     </div>
-                     <div class="playlist2-info">
-                        <h3>Aur Mix</h3>
-                        <p><a href="">The Local Train</a>, <a href="">Talha Anjum</a> and <a href="">Jhokay</a>.</p>
-                     </div>
-                  </div>
-                  <div class="playlist2Box">
-                     <div class="playlist2-photo">
-                        <img src="img/lewisMix.jpeg" alt="">
-                     </div>
-                     <div class="playlist2-info">
-                        <h3>2010s Mix</h3>
-                        <p><a href="">Lewis Capaldi</a>, <a href="">Alec Benjamin</a> and <a href="">Drake</a>.</p>
-                     </div>
-                  </div>
-                  <div class="playlist2Box">
-                     <div class="playlist2-photo">
-                        <img src="img/moodyMix.jpeg" alt="">
-                     </div>
-                     <div class="playlist2-info">
-                        <h3>Moody Mix</h3>
-                        <p><a href="">Taylor Swift</a>, <a href="">Ali Gatie</a>, <a href="">Eminem</a> and <a
-                              href="">more</a>.</p>
-                     </div>
-                  </div>
-                  <div class="playlist2Box">
-                     <div class="playlist2-photo">
-                        <img src="img/hiphopMix.jpeg" alt="">
-                     </div>
-                     <div class="playlist2-info">
-                        <h3>Hip Hop Mix</h3>
-                        <p><a href="">JJ47</a>, <a href="">Talha Yunus</a> and <a href="">Muhfaad</a>.</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
+            <!-- DynaimcPlaylistStarts -->
 
-            <!-- PlaylistThreeStarts -->
-
-            <div class="playlistbox-three playlistBoxes">
-               <div class="playlist3-heading playlistHeadings">
-                  <h3>Made For SaMaR</h3>
-                  <h5>Show all</h5>
-               </div>
-               <div class="playlist2-boxes playlistContainers">
-                  <div class="playlist2Box">
-                     <div class="playlist2-photo">
-                        <img src="img/weeklyDp.jpeg" alt="">
-                     </div>
-                     <div class="playlist2-info">
-                        <h3>Discover Weekly</h3>
-                        <p>Your weekly mixtape of fresh magic.</p>
-                     </div>
-                  </div>
-                  <div class="playlist2Box ">
-                     <div class="playlist2-photo">
-                        <img src="img/daily1.jpeg" alt="">
-                     </div>
-                     <div class="playlist2-info">
-                        <h3>Daily Mix 1</h3>
-                        <p>Pritam, Mohit Chauhan, Asha Bhosle and more.</p>
-                     </div>
-                  </div>
-                  <div class="playlist2Box">
-                     <div class="playlist2-photo">
-                        <img src="img/daily2.jpeg" alt="">
-                     </div>
-                     <div class="playlist2-info">
-                        <h3>Daily Mix 2</h3>
-                        <p>JANI, CHEN-K, Nabeel Akbar and more.</p>
-                     </div>
-                  </div>
-                  <div class="playlist2Box">
-                     <div class="playlist2-photo">
-                        <img src="img/daily3.jpeg" alt="">
-                     </div>
-                     <div class="playlist2-info">
-                        <h3>Daily Mix 3</h3>
-                        <p>Young Stunners, J Trix, Loka and more.</p>
-                     </div>
-                  </div>
-                  <div class="playlist2Box">
-                     <div class="playlist2-photo">
-                        <img src="img/daily4.jpeg" alt="">
-                     </div>
-                     <div class="playlist2-info">
-                        <h3>Daily Mix 4</h3>
-                        <p>Atif Aslam, Udit Narayan, Jal and more.</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <!-- PlaylistFourStarts -->
-            <div class="playlistbox-four playlistBoxes">
-               <div class="playlist4-heading playlistHeadings">
-                  <h3>Recently played</h3>
-                  <h5>Show all</h5>
-               </div>
-               <div class="playlist2-boxes playlistContainers">
-                  <div class="playlist2Box">
-                     <div class="playlist2-photo">
-                        <img src="img/ohfeelDp.jpeg" alt="">
-                     </div>
-                     <div class="playlist2-info playlistInfo">
-                        <h3>oh the feels</h3>
-                        <p>By SaMaR</p>
-                     </div>
-                  </div>
-                  <div class="playlist2Box ">
-                     <div class="playlist2-photo">
-                        <img src="img/likedDp.png" alt="">
-                     </div>
-                     <div class="playlist2-info playlistInfo">
-                        <h3>Liked Songs</h3>
-                        <p>666 songs</p>
-                     </div>
-                  </div>
-                  <div class="playlist2Box">
-                     <div class="playlist2-photo">
-                        <img src="img/rockstarDp.jpeg" alt="">
-                     </div>
-                     <div class="playlist2-info playlistInfo">
-                        <h3>Rockstar</h3>
-                        <p><a href="">A.R Rahman</a>, <a href="">Irshad Kamil</a></p>
-                     </div>
-                  </div>
-                  <div class="playlist2Box">
-                     <div class="playlist2-photo roundedPhoto">
-                        <img src="img/nfDp.jpeg" alt="">
-                     </div>
-                     <div class="playlist2-info playlistInfo">
-                        <h3>NF</h3>
-                        <p>Artist</p>
-                     </div>
-                  </div>
-                  <div class="playlist2Box">
-                     <div class="playlist2-photo">
-                        <img src="img/wrapDp.jpeg" alt="">
-                     </div>
-                     <div class="playlist2-info playlistInfo">
-                        <h3>2023 wRAPped</h3>
-                        <p>By Spotify.</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <!-- PlaylistFiveStarts -->
-            <div class="playlistbox-five playlistBoxes">
-               <div class="playlist5-heading playlistHeadings">
-                  <h3>Throwback</h3>
-                  <h5>Show all</h5>
-               </div>
-               <div class="playlist2-boxes playlistContainers">
-                  <div class="playlist2Box">
-                     <div class="playlist2-photo">
-                        <img src="img/throwback1.jpeg" alt="">
-                     </div>
-                     <div class="playlist2-info">
-                        <h3>All Out 00's Hindi</h3>
-                        <p>Bollywood songs that ruled hearts.</p>
-                     </div>
-                  </div>
-                  <div class="playlist2Box ">
-                     <div class="playlist2-photo">
-                        <img src="img/throwback2.jpeg" alt="">
-                     </div>
-                     <div class="playlist2-info">
-                        <h3>All Out 2020s</h3>
-                        <p>The biggest songs of the 2020s.</p>
-                     </div>
-                  </div>
-                  <div class="playlist2Box">
-                     <div class="playlist2-photo">
-                        <img src="img/throwback3.jpeg" alt="">
-                     </div>
-                     <div class="playlist2-info">
-                        <h3>00's Love Hits</h3>
-                        <p>Fall in love with 00's songs like never before!</p>
-                     </div>
-                  </div>
-                  <div class="playlist2Box">
-                     <div class="playlist2-photo">
-                        <img src="img/throwback4.jpeg" alt="">
-                     </div>
-                     <div class="playlist2-info">
-                        <h3>90s Swagger</h3>
-                        <p>Everything from cheesy floor-fillers to big ban..</p>
-                     </div>
-                  </div>
-                  <div class="playlist2Box">
-                     <div class="playlist2-photo">
-                        <img src="img/throwback5.jpeg" alt="">
-                     </div>
-                     <div class="playlist2-info">
-                        <h3>Top Hits of 2019</h3>
-                        <p>Rewind and Rediscover songs of 2019.</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-
-            <!-- PlaylistSixStarts -->
-            <div class="playlistbox-six playlistBoxes">
-               <div class="playlist6-heading playlistHeadings">
-                  <h3>Discover picks for you</h3>
-                  <h5>Show all</h5>
-               </div>
-               <div class="playlist2-boxes playlistContainers">
-                  <div class="playlist2Box">
-                     <div class="playlist2-photo">
-                        <img src="img/alagDp.jpeg" alt="">
-                     </div>
-                     <div class="playlist2-info playlistInfo">
-                        <h3>Alag Aasmaan</h3>
-                        <p><a href="">Anuv Jain</a></p>
-                     </div>
-                  </div>
-                  <div class="playlist2Box ">
-                     <div class="playlist2-photo">
-                        <img src="img/allofyouDp.jpeg" alt="">
-                     </div>
-                     <div class="playlist2-info playlistInfo">
-                        <h3>All of Me</h3>
-                        <p><a href="">John Legend</a></p>
-                     </div>
-                  </div>
-                  <div class="playlist2Box">
-                     <div class="playlist2-photo">
-                        <img src="img/energyDp.jpeg" alt="">
-                     </div>
-                     <div class="playlist2-info playlistInfo">
-                        <h3>energy</h3>
-                        <p><a href="">Tyla Jane</a></p>
-                     </div>
-                  </div>
-                  <div class="playlist2Box">
-                     <div class="playlist2-photo">
-                        <img src="img/chooLoDp.jpeg" alt="">
-                     </div>
-                     <div class="playlist2-info playlistInfo">
-                        <h3>Choo Lo</h3>
-                        <p><a href="">The Local Train</a></p>
-                     </div>
-                  </div>
-                  <div class="playlist2Box">
-                     <div class="playlist2-photo">
-                        <img src="img/beautifullDp.jpeg" alt="">
-                     </div>
-                     <div class="playlist2-info playlistInfo">
-                        <h3>Beautiful</h3>
-                        <p><i class="fa-solid fa-e"></i><a href="">Eminem</a></p>
-                     </div>
-                  </div>
-               </div>
-            </div>
+            <div class="playlistBox-two" id="playlistBoxes"></div>
 
             <!-- FooterStartsHere -->
+            
             <footer class="footer">
                <div class="upper-footer">
                   <div class="upper-left">
@@ -608,12 +336,12 @@
       <div class="control-container">
          <div class="controlLeft">
             <div class="photo-box">
-               <img src="img/energyDp.jpeg" alt="">
+               <img src="img/energyDp.jpeg" class="song-img" alt="">
             </div>
             <div class="info-box">
                <div class="info-headings">
-                  <h3>energy</h3>
-                  <p>Tyla Jane</p>
+                  <h3 id="songName">energy</h3>
+                  <p id="artistName">Tyla Jane</p>
                </div>
                <div class="like-box">
                   <i class="fa-regular fa-heart"></i>
@@ -625,7 +353,7 @@
             <div class="middleUpper">
                <i class="fa-solid fa-shuffle"></i>
                <i class="fa-solid fa-backward-step"></i>
-               <i class="fa-solid fa-circle-pause" id="pause-resume"></i>
+               <i class="fa-solid fa-circle-pause" id="pause-resume" onclick="togglePauseResume()"></i>
                <i class="fa-solid fa-forward-step"></i>
                <i class="fa-solid fa-repeat"></i>
             </div>
@@ -647,6 +375,12 @@
       </div>
 
    </div>
+
+
+   <audio id="myAudio">
+      <source src="img/audio1.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+   </audio>
    <script src="index.js"></script>
 </body>
 
