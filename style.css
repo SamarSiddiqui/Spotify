@@ -1226,8 +1226,26 @@
     }
 }
 
-@media screen and (min-height:610px){
-   .main-container{
-     border: 5px solid rosybrown;
+ @media screen and (max-height:650px) {
+   .content-explorer {
+     height: 590px;
    }
-  }
+
+   .playlist-container {
+     height: 590px;
+   }
+
+   .spotifyGif-img {
+     right: 2px;
+     width: 50px;
+     height: 50px;
+   }
+
+   .responsive-footer {
+     top: 585px;
+   }
+
+   .control-container {
+     top: 510px;
+   }
+ }
