@@ -1455,11 +1455,11 @@
    }
 
    .content-explorer {
-     height: 650px;
+     height: 670px;
    }
 
    .playlist-container {
-     height: 650px;
+     height: 670px;
    }
 
    .playlistimgDiv {
@@ -1478,7 +1478,6 @@
 
    .upper-footer {
      height: 600px;
-     border: 1px solid red;
    }
   .one {
      left: 25px;
