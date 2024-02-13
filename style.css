@@ -1451,7 +1451,7 @@
    }
 
    .main-container {
-     height: 90vh;
+     height: 92vh;
    }
 
    .content-explorer {
@@ -1479,6 +1479,17 @@
    .upper-footer {
      height: 600px;
      border: 1px solid red;
+   }
+  .one {
+     left: 25px;
+   }
+
+   .two {
+     left: 220px;
+   }
+
+   .three {
+     right: 230px;
    }
  }
 
