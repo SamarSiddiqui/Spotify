@@ -94,7 +94,7 @@
         "singerName": "Eminem",
         "audioPath": "./Assets/Audio/mockingbird.mp3",
         "songName": "Mockingbird",
-        "songImg": "./Assets/PlaylistPhoto/Mockingbird.jpeg"
+        "songImg": "./Assets/PlaylistPhoto/mockingbird.jpeg"
       },
       {
         "id": 3,
