@@ -1479,6 +1479,9 @@
    .upper-footer {
      height: 600px;
    }
+  .upper-right{
+  top:250px;
+  }
   .one {
      left: 25px;
    }
