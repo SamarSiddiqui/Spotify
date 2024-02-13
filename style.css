@@ -1201,8 +1201,14 @@
      .playlist-artist {
          font-size: 11px;
     }
+   .info-headings h3 {
+     font-size: 14px;
+   }
+   .info-headings p {
+     font-size: 12px;
+   }
      .info-box {
-         width: 60vw;
+         width: 63vw;
     }
      .two {
          left: 160px;
