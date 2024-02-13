@@ -1315,6 +1315,7 @@
    }
 .main-container{
      border:5px solid red;
+ height:90vh
 }
 
    .responsive-footer {
