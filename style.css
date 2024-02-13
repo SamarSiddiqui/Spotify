@@ -1442,16 +1442,24 @@
      width: 66vw;
    }
  }
-@media screen and (max-width:405px) {
+
+ @media screen and (max-width:405px) {
    .song-box {
      width: 100px;
      height: 170px;
-    border:1px solid red;
-     /* margin: 10px 5px; */
+
+   }
+
+   .main-container {
+     height: 90h;
    }
 
    .content-explorer {
-     border: 1px solid red;
+     height: 650px;
+   }
+
+   .playlist-container {
+     height: 650px;
    }
 
    .playlistimgDiv {
@@ -1467,7 +1475,13 @@
    .playlist-artist {
      display: none;
    }
+
+   .upper-footer {
+     height: 600px;
+     border: 1px solid red;
+   }
  }
+
  @media screen and (max-width:376px) {
    .song-box:nth-last-child(-n+3) {
      display: none;
