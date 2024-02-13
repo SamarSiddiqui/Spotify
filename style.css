@@ -1195,6 +1195,7 @@
    .category {
      height: 270px;
      width: 99%;
+    border:5px solid red;
 
 
    }
