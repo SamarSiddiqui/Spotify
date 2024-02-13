@@ -1195,9 +1195,6 @@
    .category {
      height: 270px;
      width: 99%;
-    border:5px solid red;
-
-
    }
 
    .song-box {
@@ -1316,6 +1313,9 @@
    ::-webkit-scrollbar {
      width: 0px;
    }
+.main-container{
+     border:5px solid red;
+}
 
    .responsive-footer {
      position: absolute;
