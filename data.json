@@ -92,7 +92,7 @@
       {
         "id": 2,
         "singerName": "Eminem",
-        "audioPath": "./Assets/Audio/mockingbird.mp3",
+        "audioPath": "./Assets/Audio/Mockingbird.mp3",
         "songName": "Mockingbird",
         "songImg": "./Assets/PlaylistPhoto/mockingbird.jpeg"
       },
