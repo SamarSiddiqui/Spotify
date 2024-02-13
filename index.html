@@ -4,13 +4,16 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Webpage title -->
    <title>Spotify</title>
-   <link rel="icon" href="img/file-spotify-logo-png-4.png" type="image/icon type">
+   <!-- Link to an external CSS file -->
    <link rel="stylesheet" href="style.css">
+   <!-- Webpage title img-->
+   <link rel="icon" href="img/file-spotify-logo-png-4.png" type="image/icon type">
+   <!-- Link to Font Awesome for using icons -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
 </head>
 
 <body>
@@ -47,23 +50,19 @@
                   <i class="fa-solid fa-arrow-right"></i>
                </div>
             </div>
-
             <div class="option-list">
                <button>Playlists</button>
                <button>Artists</button>
                <button>Albums</button>
                <button>Podcast</button>
             </div>
-
             <div class="playlist-section">
                <div class="search-area playlist-box0">
                   <div class="left-area">
                      <i class="fa-solid fa-magnifying-glass"></i>
                   </div>
                   <div class="right-area">
-                     <!-- <span>Recents</span> -->
                      <h4>Recents</h4>
-
                      <i class="fa-solid fa-list"></i>
                   </div>
                </div>
@@ -121,7 +120,6 @@
                      <h5>Artist</h5>
                   </div>
                </div>
-
                <div class="dope-area playlist-box">
                   <div class="liked-photo">
                      <img src="img/dopeDp.jpeg" alt="">
@@ -131,7 +129,6 @@
                      <h5>Playlist . SaMaR</h5>
                   </div>
                </div>
-
                <div class="tyla-area playlist-box">
                   <div class="liked-photo profile-photo">
                      <img src="img/tylaDp.jpeg" alt="">
@@ -168,7 +165,6 @@
                      <h5>Playlist . Taylor Swift</h5>
                   </div>
                </div>
-
                <div class="talha area playlist-box">
                   <div class="liked-photo profile-photo">
                      <img src="img/stunnersDp.jpeg" alt="">
@@ -178,7 +174,6 @@
                      <h5>Artist</h5>
                   </div>
                </div>
-
                <div class="kk-area playlist-box">
                   <div class="liked-photo profile-photo">
                      <img src="img/kkDp.jpeg" alt="">
@@ -188,7 +183,6 @@
                      <h5>Artist</h5>
                   </div>
                </div>
-
                <div class="mohit-area playlist-box">
                   <div class="liked-photo profile-photo">
                      <img src="img/mohitDp.jpeg" alt="">
@@ -207,15 +201,11 @@
                      <h5>Artist</h5>
                   </div>
                </div>
-
-
             </div>
          </div>
-
       </aside>
-
       <!-- SideMenu Ends Here -->
-
+      <!-- Content-Explorer Starts Here -->
       <main class="content-explorer">
          <header class="header">
             <div class="left-side">
@@ -232,7 +222,10 @@
          <!-- PlayListOneStartHere -->
          <div class="playlist-container" id="playlistContainer">
             <div class="greet-heading">
-               <h3>Good Evening</h3>
+               <h3 id="greeting"> </h3>
+               <div class="spotifyGif-img">
+                  <img src="img/spotifyGif.gif" class="spotifyGif" alt="SpotifyGif" loop="1">
+               </div>
             </div>
             <div class="playlistBox-one">
                <div class="playlistOne-boxes liked-Box">
@@ -272,13 +265,9 @@
                   <h3>Taylor Swift</h3>
                </div>
             </div>
-
             <!-- DynaimcPlaylistStarts -->
-
             <div class="playlistBox-two" id="playlistBoxes"></div>
-
             <!-- FooterStartsHere -->
-            
             <footer class="footer">
                <div class="upper-footer">
                   <div class="upper-left">
@@ -324,19 +313,17 @@
                      <h3><a href="">Accessibility</a></h3>
                   </div>
                   <div class="lower-right">
-                     <h3>2024 Spotify AB</h3>
+                     <h3><i class="fa-regular fa-copyright"></i> 2024 Spotify AB</h3>
                   </div>
                </div>
             </footer>
-
          </div>
       </main>
-
       <!-- ControlContainerStartsHere -->
       <div class="control-container">
-         <div class="controlLeft">
+         <div class="controlLeft" id="control-left">
             <div class="photo-box">
-               <img src="img/energyDp.jpeg" class="song-img" alt="">
+               <img src="img/energyDp.jpeg" alt="">
             </div>
             <div class="info-box">
                <div class="info-headings">
@@ -344,43 +331,72 @@
                   <p id="artistName">Tyla Jane</p>
                </div>
                <div class="like-box">
-                  <i class="fa-regular fa-heart"></i>
+                  <i id="heartIcon" class="fa-regular fa-heart"></i>
                </div>
             </div>
          </div>
-
          <div class="controlMiddle">
             <div class="middleUpper">
-               <i class="fa-solid fa-shuffle"></i>
-               <i class="fa-solid fa-backward-step"></i>
-               <i class="fa-solid fa-circle-pause" id="pause-resume" onclick="togglePauseResume()"></i>
-               <i class="fa-solid fa-forward-step"></i>
-               <i class="fa-solid fa-repeat"></i>
+               <i id="non-active" class="fa-solid fa-shuffle"></i>
+               <i id="backwardBtn" class="fa-solid fa-backward-step"></i>
+               <i class="fa-solid fa-circle-play" id="pause-resume" onclick="togglePauseResume()"></i>
+               <i id="forwardBtn" class="fa-solid fa-forward-step"></i>
+               <i id="non-active" class="fa-solid fa-repeat"></i>
             </div>
             <div class="middleLower">
-               <span>1:06</span>
-               <input type="range">
-               <span>4:20</span>
-
+               <span id="currentTime">0:00</span>
+               <input type="range" id="timeLine" min="0" value="0" step="0">
+               <span id="songDuration">3:20</span>
+               <audio controls id="myAudio">
+                  <source src="/Assets/Audio/energy.mp3" type="audio/mp3">
+               </audio>
             </div>
          </div>
          <div class="controlRight">
             <i class="fa-regular fa-file-audio"></i>
             <i class="fa-solid fa-computer"></i>
             <i class="fa-solid fa-music"></i>
-            <i class="fa-solid fa-volume-high"></i>
-            <input type="range" class="volume" min="0" max="100" value="50">
+            <i class="fas fa-volume-high volume-icon" onclick="toggleVolume()"></i>
+            <input type="range" id="volume" step="10" value="100">
             <i class="fa-solid fa-layer-group"></i>
          </div>
       </div>
+      <div class="responsive-footer">
 
+         <div class="one responsive-boxes">
+            <i class="fa-solid fa-house"></i>
+
+         </div>
+
+         <div class="two responsive-boxes">
+            <i class="fa-solid fa-magnifying-glass" id="inactive-search"></i>
+
+
+         </div>
+
+         <div class="three responsive-boxes">
+
+            <div class="library-left">
+               <span class="svg-container" id="svgContainer">
+                  <svg data-encore-id="icon" role="img" aria-hidden="true" class="hover-svg" viewBox="0 0 24 24"
+                     class="Svg-sc-ytk21e-0 iYxpxA">
+                     <path
+                        d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z">
+                     </path>
+                  </svg>
+
+
+            </div>
+         </div>
+
+         <div class="four responsive-boxes">
+            <i class="fa-brands fa-spotify"></i>
+
+
+         </div>
+
+      </div>
    </div>
-
-
-   <audio id="myAudio">
-      <source src="img/audio1.mp3" type="audio/mp3">
-      Your browser does not support the audio element.
-   </audio>
    <script src="index.js"></script>
 </body>
 
