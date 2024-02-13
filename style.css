@@ -1134,6 +1134,7 @@
     }
      .playlist-name {
          font-size: 10px;
+      color: red;
     }
      .playlist-artist {
          font-size: 10px;
@@ -1162,6 +1163,7 @@
     }
      .playlist-name {
          font-size: 14px;
+      color: blue;
     }
      .playlist-artist {
          font-size: 12px;
@@ -1193,6 +1195,7 @@
     }
      .playlist-name {
          font-size: 12px;
+      color: yellow;
     }
      .spotifyGif-img {
          right: 0;
@@ -1203,7 +1206,7 @@
     }
    .info-headings h3 {
      font-size: 14px;
-   }
+    }
    .info-headings p {
      font-size: 12px;
    }
@@ -1222,3 +1225,9 @@
          display: none;
     }
 }
+
+@media screen and (min-height:610px){
+   .main-container{
+     border: 5px solid rosybrown;
+   }
+  }
