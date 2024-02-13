@@ -1,0 +1,189 @@
+{
+  "categories": {
+    "Made For SaMaR": [
+      {
+        "id": 0,
+        "singerName": "Taylor Swift",
+        "audioPath": "./Assets/Audio/right where you left me.mp3",
+        "songName": "right where you left me",
+        "songImg": "./Assets/PlaylistPhoto/rightDp.jpeg"
+      },
+      {
+        "id": 1,
+        "singerName": "Gregory Alan Isakov",
+        "audioPath": "./Assets/Audio/Big Black Car.mp3",
+        "songName": "Big Black Car",
+        "songImg": "./Assets/PlaylistPhoto/bigDp.jpeg"
+      },
+      {
+        "id": 2,
+        "singerName": "Lewis Capaldi",
+        "audioPath": "./Assets/Audio/Someone You Loved.mp3",
+        "songName": "Someone You Loved",
+        "songImg": "./Assets/PlaylistPhoto/someoneDp.jpeg"
+      },
+      {
+        "id": 3,
+        "singerName": "Aur",
+        "audioPath": "./Assets/Audio/AUR.mp3",
+        "songName": "Tu hai kahan",
+        "songImg": "./Assets/PlaylistPhoto/aurDp.jpeg"
+      },
+      {
+        "id": 4,
+        "singerName": "Halsey",
+        "audioPath": "./Assets/Audio/Eastside.mp3",
+        "songName": "Eastside",
+        "songImg": "./Assets/PlaylistPhoto/eastdiseDp.jpeg"
+      }
+    ],
+    "Nostalgic Melodies": [
+      {
+        "id": 0,
+        "singerName": "Mohit Chauhan",
+        "audioPath": "./Assets/Audio/DOORIYAN.mp3",
+        "songName": "Dooriyan",
+        "songImg": "./Assets/PlaylistPhoto/dooriDp.jpeg"
+      },
+      {
+        "id": 1,
+        "singerName": "Mustafa Zahid",
+        "audioPath": "./Assets/Audio/Tera Mera Rishta Purana.mp3",
+        "songName": "Tera Mera Rishta",
+        "songImg": "./Assets/PlaylistPhoto/awaraDp.jpeg"
+      },
+      {
+        "id": 2,
+        "singerName": "KK",
+        "audioPath": "./Assets/Audio/Kya Mujhe Pyar.mp3",
+        "songName": "Kya Mujhe Pyar Hai",
+        "songImg": "./Assets/PlaylistPhoto/lamheDp.jpeg"
+      },
+      {
+        "id": 3,
+        "singerName": "Arjit Singh",
+        "audioPath": "./Assets/Audio/Khamoshiyan.mp3",
+        "songName": "Khamoshiyan",
+        "songImg": "./Assets/PlaylistPhoto/khamoshiyan.jpeg"
+      },
+      {
+        "id": 4,
+        "singerName": "Atif Aslam",
+        "audioPath": "./Assets/Audio/Tere Liye.mp3",
+        "songName": "Tere Liye",
+        "songImg": "./Assets/PlaylistPhoto/princeDp.jpeg"
+      }
+    ],
+    "oh the feels": [
+      {
+        "id": 0,
+        "singerName": "Passenger",
+        "audioPath": "./Assets/Audio/Let Her Go.mp3",
+        "songName": "Let Her Go",
+        "songImg": "./Assets/PlaylistPhoto/letherDp.jpeg"
+      },
+      {
+        "id": 1,
+        "singerName": "John Legend",
+        "audioPath": "./Assets/Audio/All of me.mp3",
+        "songName": "All of Me",
+        "songImg": "./Assets/PlaylistPhoto/allofDp.jpeg"
+      },
+      {
+        "id": 2,
+        "singerName": "Eminem",
+        "audioPath": "./Assets/Audio/mockingbird.mp3",
+        "songName": "Mockingbird",
+        "songImg": "./Assets/PlaylistPhoto/Mockingbird.jpeg"
+      },
+      {
+        "id": 3,
+        "singerName": "The Local Train",
+        "audioPath": "./Assets/Audio/choolo.mp3",
+        "songName": "Choo Lo",
+        "songImg": "./Assets/PlaylistPhoto/chooloDp.jpeg"
+      },
+      {
+        "id": 4,
+        "singerName": "Taylor Swift",
+        "audioPath": "./Assets/Audio/Today Was A Fairytale.mp3",
+        "songName": "Today Was A Fairytale",
+        "songImg": "./Assets/PlaylistPhoto/todayDp.jpeg"
+      }
+    ],
+    "Old school": [
+      {
+        "id": 0,
+        "singerName": "Young Stunners",
+        "audioPath": "./Assets/Audio/QUARANTINE.mp3",
+        "songName": "Quarantine",
+        "songImg": "./Assets/PlaylistPhoto/quarrantineDp.jpeg"
+      },
+      {
+        "id": 1,
+        "singerName": "Faris Shafi",
+        "audioPath": "./Assets/Audio/Nazar.mp3",
+        "songName": "Nazar",
+        "songImg": "./Assets/PlaylistPhoto/nazarDp.jpeg"
+      },
+      {
+        "id": 2,
+        "singerName": "CHEN-K",
+        "audioPath": "./Assets/Audio/Berang.mp3",
+        "songName": "Berang",
+        "songImg": "./Assets/PlaylistPhoto/berangDP.jpg"
+      },
+      {
+        "id": 3,
+        "singerName": "Talha Yunus",
+        "audioPath": "./Assets/Audio/HATH BAANDH.mp3",
+        "songName": "Hath Baandh",
+        "songImg": "./Assets/PlaylistPhoto/haathDp.jpeg"
+      },
+      {
+        "id": 4,
+        "singerName": "Jhokay, Nabeel Akbar",
+        "audioPath": "./Assets/Audio/Khana Badosh.mp3",
+        "songName": "Khana Badosh",
+        "songImg": "./Assets/PlaylistPhoto/kahaanDP.jpeg"
+      }
+    ],
+    "I see 'Colors'": [
+      {
+        "id": 0,
+        "singerName": "Tyla Jane",
+        "audioPath": "./Assets/Audio/energy.mp3",
+        "songName": "energy",
+        "songImg": "./Assets/PlaylistPhoto/energyDp.jpeg"
+      },
+      {
+        "id": 1,
+        "singerName": "WILLOW",
+        "audioPath": "./Assets/Audio/WILLOW.mp3",
+        "songName": "Wait a Minute!",
+        "songImg": "./Assets/PlaylistPhoto/waitDp.jpeg"
+      },
+      {
+        "id": 2,
+        "singerName": "Akon",
+        "audioPath": "./Assets/Audio/Lonely.mp3",
+        "songName": "Lonely",
+        "songImg": "./Assets/PlaylistPhoto/akonDp.jpeg"
+      },
+      {
+        "id": 3,
+        "singerName": "Halsey",
+        "audioPath": "./Assets/Audio/Without Me.mp3",
+        "songName": "Without Me",
+        "songImg": "./Assets/PlaylistPhoto/halseyDp.jpeg"
+      },
+      {
+        "id": 4,
+        "singerName": "Anuv Jain",
+        "audioPath": "./Assets/Audio/ALAG AASMAAN.mp3",
+        "songName": "Alag Aasmaan",
+        "songImg": "./Assets/PlaylistPhoto/alagDp.jpeg"
+      }
+    ]
+  }
+}
