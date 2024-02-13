@@ -1313,12 +1313,8 @@
    ::-webkit-scrollbar {
      width: 0px;
    }
-.main-container{
-     border:5px solid red;
- height:90vh
-}
 
-   .responsive-footer {
+  .responsive-footer {
      position: absolute;
      display: block;
      width: 100%;
@@ -1446,7 +1442,32 @@
      width: 66vw;
    }
  }
+@media screen and (max-width:405px) {
+   .song-box {
+     width: 100px;
+     height: 170px;
+    border:1px solid red;
+     /* margin: 10px 5px; */
+   }
 
+   .content-explorer {
+     border: 1px solid red;
+   }
+
+   .playlistimgDiv {
+     width: 110px;
+     height: 110px;
+     margin: 10px 5px 5px;
+   }
+
+   .playlistInfo h3 {
+     font-size: 13px;
+   }
+
+   .playlist-artist {
+     display: none;
+   }
+ }
  @media screen and (max-width:376px) {
    .song-box:nth-last-child(-n+3) {
      display: none;
