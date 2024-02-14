@@ -152,7 +152,7 @@
       {
         "id": 0,
         "singerName": "Tyla Jane",
-        "audioPath": "./Assets/Audio/energy.mp3",
+        "audioPath": "./Assets/Audio/Energy.mp3",
         "songName": "energy",
         "songImg": "./Assets/PlaylistPhoto/energyDp.jpeg"
       },
