@@ -30,7 +30,7 @@
  .main-container {
      position: relative;
      box-sizing: border-box;
-     width: 100vw;
+     width: 100%;
      height: 100vh;
      overflow: hidden;
 }
@@ -143,6 +143,12 @@
      height: 50px;
      display: flex;
      align-items: center;
+     white-space: nowrap;
+     overflow-x: auto;
+     -ms-overflow-style: auto;
+}
+ .option-list::-webkit-scrollbar {
+     display: none;
 }
  .option-list button {
      height: 30px;
@@ -278,10 +284,10 @@
 /* ContentExplorerStartsHere */
  .content-explorer {
      width: 73vw;
-     height: 595px;
+     height: 592px;
      position: absolute;
      border-radius: 8px;
-     top: 0;
+     top: 11.5px;
      right: 7px;
      background: linear-gradient(to bottom, #222121 5%, #141414 25%);
 }
@@ -371,13 +377,6 @@
      overflow-x: hidden;
      border-radius: 0 0 10px 10px;
 }
- .playlistBox-one {
-     height: 130px;
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
-     align-items: center;
-}
  .greet-heading h3 {
      width: 300px;
      height: 40px;
@@ -389,8 +388,16 @@
  .spotifyGif-img {
      display: none;
 }
+ .playlistBox-one {
+     width: 100%;
+     height: 130px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+}
  .playlistOne-boxes {
-     width: 350px;
+     width: 31%;
      height: 54px;
      margin: 5px;
      display: flex;
@@ -413,7 +420,7 @@
 }
  .playlist-photos {
      width: 50px;
-     height: 52px;
+     height: 100%;
 }
  .playlist-photos img {
      width: 100%;
@@ -423,7 +430,6 @@
 }
  .playlistOne-boxes h3 {
      display: flex;
-     width: 300px;
      align-items: center;
      font-size: 15px;
      padding-left: 8px;
@@ -433,44 +439,54 @@
 }
 /*DynaimcPlaylistStarts */
  .playlistBox-two {
-     height: 1600px;
+     overflow: hidden;
      margin-top: 20px;
 }
  .category {
-     margin: 20px;
-     height: 320px;
-     display: flex;
+     margin: 10px 0;
+     height: 330px;
      position: relative;
 }
  .song-box {
      cursor: pointer;
-     flex: 1;
+     overflow: auto;
      width: 210px;
      height: 270px;
-     margin: 40px 10px;
+     display: inline-block;
+     margin: 5px;
      background-color: #1d1d1d;
      border-radius: 10px;
      position: relative;
-     cursor: pointer;
 }
  .song-box:hover {
      background-color: #272626;
 }
- .playlistTitleDiv {
-     width: 71vw;
-     height: 35px;
-     margin: auto;
-     position: absolute;
+ .song-container {
+     width: 100%;
+     height: 290px;
+     overflow-y: hidden;
+     overflow-x: auto;
+     white-space: nowrap;
+     -ms-overflow-style: auto;
+}
+ .song-container::-webkit-scrollbar {
+     display: none;
+}
+ .title-div {
+     position: sticky;
+     width: 100%;
+     height: 30px;
+     display: flex;
+     justify-content: space-between;
 }
  .playlistTitle {
-     position: absolute;
-     left: 11px;
+     width: 200px;
+     margin-left: 10px;
      font-size: 22px;
 }
  .playlist-option {
-     position: absolute;
-     bottom: 7px;
-     right: 25px;
+     margin: 7px;
+     text-align: center;
      font-size: 14px;
      color: #9f9b9b;
      cursor: pointer;
@@ -518,7 +534,6 @@
 /* FooterStartsHere */
  .footer {
      height: 350px;
-     margin-top: 60px;
 }
  .upper-footer {
      height: 340px;
@@ -640,7 +655,6 @@
      left: 8px;
 }
  .photo-box img {
-     border: 3px so lid red;
      width: 100%;
      height: 100%;
      object-fit: cover;
@@ -813,76 +827,33 @@
  .responsive-footer {
      display: none;
 }
- @media screen and (max-width:1441px) {
-     .playlistOne-boxes {
-         width: 330px;
-         height: 54px;
-    }
-     .playlistOne-boxes h3 {
-         width: 280px;
-    }
-     .playlist-name {
-         font-size: 14px;
-    }
-     .playlist-artist {
-         font-size: 13px;
-    }
-     .control-container {
-         height: 100px;
-         display: flex;
-         align-items: center;
-    }
-}
- @media screen and (max-width:1025px) {
+ @media screen and (max-width:1215px) {
      .aside {
-         width: 35vw;
-         height: 515px;
+         width: 33vw;
+         height: 610px;
     }
      .aside-lower {
-         height: 400px;
+         height: 500px;
     }
      .playlist-section {
-         height: 300px;
+         height: 400px;
     }
      .content-explorer {
-         width: 62vw;
-         height: 515px;
+        /* border: 0.1px solid pink;
+         */
+         width: 64vw;
+         height: 611px;
     }
      .playlist-container {
-         height: 445px;
+        /* border: 3px solid darkblue;
+         */
+         height: 535px;
     }
      .greet-heading h3 {
          margin-left: 18px;
     }
-     .playlistBox-one {
-         height: 180px;
-    }
-     .playlistOne-boxes {
-         width: 290px;
-         height: 45px;
-    }
-     .playlistOne-boxes h3 {
-         width: 180px;
-    }
-     .playlist-photos {
-         height: 45px;
-         width: 47px;
-    }
      .playlistTitleDiv {
          width: 97%;
-    }
-     .category {
-         display: flex;
-         margin: 10px;
-         height: 300px;
-    }
-     .song-box {
-         width: 200px;
-         height: 250px;
-         margin: 40px 5px 0 5px;
-    }
-     .footer {
-         margin-top: 0;
     }
      .upper-footer {
          height: 520px;
@@ -890,7 +861,8 @@
      .upper-left {
          position: relative;
          display: block;
-         width: 180px;
+         width: auto;
+         height: auto;
     }
      .upper-right {
          top: 25px;
@@ -898,7 +870,7 @@
      .footerBoxes {
          width: 200px;
          height: auto;
-         margin: 40px 0;
+         margin: 30px 0;
     }
      .lower-left {
          width: 390px;
@@ -906,13 +878,15 @@
          flex-wrap: wrap;
     }
      .lower-right {
-         width: 130px;
+         width: auto;
     }
      .lower-right h3 {
          text-align: left;
     }
      .control-container {
          height: 65px;
+        /* border: 5px solid red;
+         */
     }
      .controlMiddle {
          width: 490px;
@@ -922,344 +896,208 @@
          width: 85%;
          height: 20px;
     }
+    /* border: 1px solid red;
+     */
 }
- @media screen and (max-width:890px) {
-     .aside, .header, .playlistBox-one, .playlist-option, .controlLeft, .controlRight, .middleLower, #non-active, #backwardBtn, #forwardBtn {
-         display: none;
+ @media screen and (max-width:1026px) {
+     .aside {
+         height: 510px;
+    }
+     .playlist-section {
+         height: 300px;
+    }
+     .aside-lower {
+         height: 400px;
     }
      .content-explorer {
-         width: 100vw;
-         height: 560px;
-         border-radius: 0;
-         background: #000;
-    }
-     .playlistBox-two {
-         height: 1400px;
+         height: 511px;
     }
      .playlist-container {
-         height: 560px;
+         height: 435px;
     }
-     .greet-heading {
+}
+ @media screen and (max-width:921px) {
+     .aside, .header, .playlistBox-one, .playlist-option, .controlRight, .middleLower, #non-active, #backwardBtn, #forwardBtn {
+         display: none;
+    }
+     .playlist-container {
+         position: relative;
+    }
+     .content-explorer {
+         top: 0;
+         right: 0;
          width: 100vw;
-         font-size: 25px;
-         height: 50px;
-         display: flex;
-         align-items: end;
+        /* border: 10px solid red;
+         */
+         height: 100%;
+         background: #000;
+    }
+     .title-div {
+         height: 40px;
+    }
+     .category {
+         margin: 15px;
+    }
+     .playlistBox-two {
+        /* height: 1700px;
+         */
+         max-height: auto;
+    }
+     .playlist-container {
+         height: 100%;
+         overflow-y: auto;
+         -ms-overflow-style: auto;
+    }
+     .playlist-container::-webkit-scrollbar {
+         display: none;
     }
      .greet-heading {
          position: relative;
     }
+     .greet-heading h3 {
+         margin: 10px;
+         padding-left: 10px;
+    }
      .spotifyGif-img {
          display: block;
-         width: 100px;
+         width: 70px;
          position: absolute;
          height: 50px;
          right: 10px;
-         top: 1px;
+         top: -5px;
     }
      .spotifyGif-img img {
          width: 100%;
          height: 100%;
-         object-fit: contain;
-    }
-     .category {
-         height: 270px;
-         width: 99%;
-    }
-     .song-box {
-         display: block;
-         width: 290px;
-         height: 220px;
-    }
-     .playlistimgDiv {
-         margin-bottom: 5px;
-    }
-     .playlist-name {
-         font-size: 13px;
-    }
-     .playlist-artist {
-         font-size: 13px;
-         bottom: 15px;
-    }
-     .upper-footer {
-         height: 400px;
-    }
-     .upper-left {
-         margin-top: 20px;
-         display: flex;
-         flex-wrap: wrap;
-         width: 500px;
-         height: 400px;
-    }
-     .upper-right {
-         top: 40px;
-    }
-     .box-three {
-         margin: 0;
+         object-fit: cover;
     }
      .control-container {
          z-index: 1;
          position: absolute;
          background-color: #373636;
-        /* top: 484px;
-         */
-         bottom: 55px;
-         left: 10px;
+         bottom: 65px;
+         width: 96%;
          border-radius: 8px;
-         width: 98%;
-         margin: auto;
-    }
-     .controlLeft {
-         display: block;
-         width: 250px;
-         height: 60px;
+         left: 10px;
+        /* display: none;
+         */
     }
      .photo-box {
-         width: 50px;
-         height: 50px;
+         width: 57px;
+         height: 57px;
          top: 5px;
     }
      .info-box {
-         width: 85vw;
-         height: 50px;
          top: 5px;
-         left: 60px;
+        /* border: 1px solid;
+         */
+         width: 87%;
     }
-     .info-headings {
-         width: 650px;
+    /* .controlLeft {
+         position: relative;
+         width: 100%;
+         height: 65px;
+    }
+     */
+     .info-headings h3 {
+         font-size: 17px;
+    }
+     .info-headings p {
+         font-size: 14px;
+    }
+     #heartIcon {
+         position: fixed;
+         right: 90px;
+         bottom: 90px;
+         font-size: 21px;
+         color: #bdb9b9;
+    }
+     .controlMiddle {
+         width: 50px;
+         height: 50px;
+    }
+     .middleUpper {
+         position: absolute;
+         top: 7px;
+         width: 40px;
+        /* height: 10px;
+         */
+    }
+     #pause-resume {
+         display: block;
+    }
+     .responsive-footer {
+        /* display: none;
+         */
+         display: inline-flex;
+         position: absolute;
+         width: 100%;
+         z-index: 1;
+         height: 65px;
+         background: linear-gradient(to bottom, rgb(0, 0, 0, 0) 0%, rgb(0, 0, 0, 1) 10%, #000 100%);
+         bottom: 0;
+         justify-content: space-around;
+         align-items: center;
+    }
+     .responsive-boxes {
+         width: auto;
+         height: 50px;
+         display: flex;
+         align-items: center;
+         flex-direction: column;
+         margin-top: 10px;
+    }
+     .responsive-boxes i {
+         font-size: 20px;
+         margin: 0;
+    }
+     .responsive-boxes span {
+         font-size: 10px;
+         margin: 5px;
+         font-family: bookFont;
+    }
+     .responsive-boxes .inactive {
+         color: #aeaaaa;
+    }
+}
+ @media screen and (max-width:426px) {
+     .category {
+         height: 300px;
+    }
+     .song-box {
+         width: 190px;
+         height: 240px;
+         overflow: hidden;
+    }
+     .playlistimgDiv {
+         margin: 10px 15px;
+    }
+     .playlist-name, .playlist-artist {
+         left: 10px;
+    }
+     #heartIcon {
+         right: 60px;
+         bottom: 90px;
+    }
+}
+ @media screen and (max-width:376px) {
+     .control-container {
+         width: 98%;
+         left: 2px;
+    }
+     .info-box {
+         padding: 0;
     }
      .info-headings h3 {
          font-size: 15px;
     }
      .info-headings p {
-         font-size: 14px;
-    }
-     .like-box {
-         position: absolute;
-         right: 0;
-         display: block;
+         font-size: 12px;
     }
      #heartIcon {
-         font-size: 21px;
-         color: #bdb9b9;
-    }
-     .controlMiddle {
-         width: 40px;
-         height: 40px;
-    }
-     .middleUpper {
-         width: 10px;
-         height: 10px;
-    }
-     #pause-resume {
-         position: absolute;
-         right: 2px;
-         top: 14px;
-    }
-     ::-webkit-scrollbar {
-         width: 0px;
-    }
-     .responsive-footer {
-         position: absolute;
-         display: block;
-         width: 100%;
-         z-index: 1;
-         height: 55px;
-         background-color: #000;
-        /* top: 550px;
-         */
-         bottom: 0;
-    }
-     .responsive-boxes {
-         position: absolute;
-         width: 50px;
-         height: 30px;
-    }
-     .responsive-boxes i {
-         font-size: 22px;
-         display: block;
-    }
-     .one {
-         left: 50px;
-    }
-     .two {
-         left: 310px;
-    }
-     .three {
-         color: #9e9898;
-         right: 200px;
-    }
-     #svgContainer svg {
-         fill: #9e9898;
-    }
-     .four {
-         right: 0;
-         top: 15px;
-         color: #9e9898;
-    }
-}
- @media screen and (max-width:769px) {
-     .song-box:nth-last-child(-n+1) {
-         display: none;
-    }
-     .song-box {
-         width: 210px;
-    }
-     .info-box {
-         width: 82vw;
-    }
-     .two {
-         left: 250px;
-    }
-     .three {
-         right: 250px;
-    }
-     .four {
-         right: 20px;
-    }
-}
- @media screen and (max-width:426px) {
-     .playlistBox-two {
-         height: 1150px;
-    }
-     .song-box {
-         width: 150px;
-         height: 170px;
-    }
-     .category {
-         height: 220px;
-    }
-     .playlistimgDiv {
-         width: 100px;
-         height: 100px;
-    }
-     .song-box:nth-last-child(-n+2) {
-         display: none;
-    }
-     .playlist-name {
-         font-size: 10px;
-    }
-     .playlist-artist {
-         font-size: 10px;
-    }
-     .control-container {
-         width: 95%;
-    }
-     .upper-right {
-         top: 280px;
-         width: 200px;
-    }
-     .three {
-         right: 220px;
-    }
-     .info-box {
-         width: 66vw;
-    }
-}
- @media screen and (max-width:405px) {
-     .song-box {
-         width: 100px;
-         height: 170px;
-    }
-     .main-container {
-         height: 92vh;
-    }
-     .content-explorer {
-         height: 700px;
-    }
-     .playlist-container {
-         height: 700px;
-    }
-     .playlistimgDiv {
-         width: 110px;
-         height: 110px;
-         margin: 10px 5px 5px;
-    }
-     .playlistInfo h3 {
-         font-size: 13px;
-    }
-     .playlist-artist {
-         display: none;
-    }
-     .upper-footer {
-         height: 600px;
-    }
-     .upper-right{
-         top:250px;
-    }
-     .one {
-         left: 25px;
-    }
-     .two {
-         left: 220px;
-    }
-     .three {
-         right: 230px;
-    }
-}
- @media screen and (max-width:376px) {
-     .song-box:nth-last-child(-n+3) {
-         display: none;
-    }
-     .playlistimgDiv {
-         width: 150px;
-         height: 100px;
-    }
-     .playlist-name {
-         font-size: 14px;
-    }
-     .playlist-artist {
-         font-size: 12px;
-    }
-     .control-container {
-         width: 95%;
-    }
-     .upper-footer {
-         height: 650px;
-    }
-     .upper-right {
-         top: 40px;
-         right: 0;
-    }
-     .one {
-         left: 20px;
-    }
-     .two {
-         left: 200px;
-    }
-     .three {
-         right: 210px;
-    }
-}
- @media screen and (max-width:321px) {
-     .playlistimgDiv {
-         width: 120px;
-         height: 100px;
-    }
-     .playlist-name {
-         font-size: 12px;
-    }
-     .info-headings h3 {
-         font-size: 14px;
-    }
-     .info-headings p {
-         font-size: 12px;
-    }
-     .spotifyGif-img {
-         right: 0;
-         width: 50px;
-    }
-     .playlist-artist {
-         font-size: 11px;
-    }
-     .info-box {
-         width: 63vw;
-    }
-     .two {
-         left: 160px;
-    }
-     .three {
-         right: 180px;
+         right: 60px;
+         bottom: 93px;
+         font-size: 18px;
     }
 }
  @media screen and (max-width:319px) {
