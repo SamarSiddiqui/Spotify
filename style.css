@@ -1083,6 +1083,9 @@
          right: 60px;
          bottom: 90px;
     }
+    .lower-right {
+     display: none;
+     }
 }
  @media screen and (max-width:376px) {
      .control-container {
