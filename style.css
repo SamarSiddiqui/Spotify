@@ -1086,6 +1086,17 @@
     .lower-right {
      display: none;
      }
+     .upper-right {
+      display: flex;
+      flex-direction: column;
+      height: 200px;
+      width: 57px;
+   }
+
+   .upper-right {
+     display: flex;
+     justify-content: center;
+   }
 }
  @media screen and (max-width:410px) {
    #pause-resume {
