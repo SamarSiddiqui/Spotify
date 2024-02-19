@@ -1087,6 +1087,13 @@
      display: none;
      }
 }
+ @media screen and (max-width:410px) {
+   #pause-resume {
+     position: absolute;
+     right: 7px;
+     padding: 0;
+   }
+ }
  @media screen and (max-width:376px) {
      .control-container {
          width: 98%;
@@ -1100,7 +1107,8 @@
     }
      #pause-resume {
          position: absolute;
-         right: 0px;
+         right: 7px;
+         padding:0;
     }
      .info-headings h3 {
          font-size: 15px;
