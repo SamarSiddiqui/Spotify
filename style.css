@@ -3,6 +3,8 @@
      margin: 0;
      padding: 0;
      box-sizing: border-box;
+    /* height: 100%;
+     */
 }
  @font-face {
      font-family: bookFont;
@@ -21,6 +23,9 @@
      color: #fff;
      font-family: boldFont;
      background-color: var();
+    /* height: 100%;
+     overflow: hidden;
+     */
 }
  :root {
      --main-background-color: #121212;
@@ -33,6 +38,8 @@
      width: 100%;
      height: 100vh;
      overflow: hidden;
+    /* border: 5px solid;
+     */
 }
 /* SideMenu Starts Here*/
  .aside {
@@ -142,10 +149,10 @@
  .option-list {
      height: 50px;
      display: flex;
-     align-items: center;
      white-space: nowrap;
      overflow-x: auto;
      -ms-overflow-style: auto;
+     align-items: center;
 }
  .option-list::-webkit-scrollbar {
      display: none;
@@ -389,6 +396,8 @@
      display: none;
 }
  .playlistBox-one {
+    /* overflow: hidden;
+     */
      width: 100%;
      height: 130px;
      display: flex;
@@ -430,6 +439,8 @@
 }
  .playlistOne-boxes h3 {
      display: flex;
+    /* width: 300px;
+     */
      align-items: center;
      font-size: 15px;
      padding-left: 8px;
@@ -440,7 +451,11 @@
 /*DynaimcPlaylistStarts */
  .playlistBox-two {
      overflow: hidden;
+    /* height: 1600px;
+     */
      margin-top: 20px;
+    /* border: 3px solid darkgreen;
+     */
 }
  .category {
      margin: 10px 0;
@@ -534,6 +549,10 @@
 /* FooterStartsHere */
  .footer {
      height: 350px;
+    /* margin-top: 60px;
+     */
+    /* border: 1px solid firebrick;
+     */
 }
  .upper-footer {
      height: 340px;
@@ -655,6 +674,8 @@
      left: 8px;
 }
  .photo-box img {
+    /* border: 3px so lid red;
+     */
      width: 100%;
      height: 100%;
      object-fit: cover;
@@ -839,14 +860,10 @@
          height: 400px;
     }
      .content-explorer {
-        /* border: 0.1px solid pink;
-         */
          width: 64vw;
          height: 611px;
     }
      .playlist-container {
-        /* border: 3px solid darkblue;
-         */
          height: 535px;
     }
      .greet-heading h3 {
@@ -885,8 +902,6 @@
     }
      .control-container {
          height: 65px;
-        /* border: 5px solid red;
-         */
     }
      .controlMiddle {
          width: 490px;
@@ -896,8 +911,6 @@
          width: 85%;
          height: 20px;
     }
-    /* border: 1px solid red;
-     */
 }
  @media screen and (max-width:1026px) {
      .aside {
@@ -915,6 +928,9 @@
      .playlist-container {
          height: 435px;
     }
+     .info-box {
+         top: 5px;
+    }
 }
  @media screen and (max-width:921px) {
      .aside, .header, .playlistBox-one, .playlist-option, .controlRight, .middleLower, #non-active, #backwardBtn, #forwardBtn {
@@ -927,8 +943,6 @@
          top: 0;
          right: 0;
          width: 100vw;
-        /* border: 10px solid red;
-         */
          height: 100%;
          background: #000;
     }
@@ -939,8 +953,6 @@
          margin: 15px;
     }
      .playlistBox-two {
-        /* height: 1700px;
-         */
          max-height: auto;
     }
      .playlist-container {
@@ -979,36 +991,27 @@
          width: 96%;
          border-radius: 8px;
          left: 10px;
-        /* display: none;
-         */
     }
      .photo-box {
          width: 57px;
          height: 57px;
          top: 5px;
     }
-     .info-box {
-         top: 5px;
-        /* border: 1px solid;
-         */
-         width: 87%;
-    }
-    /* .controlLeft {
-         position: relative;
-         width: 100%;
-         height: 65px;
-    }
-     */
      .info-headings h3 {
          font-size: 17px;
     }
      .info-headings p {
          font-size: 14px;
     }
+     .info-box {
+         top: 5px;
+         width: 80vw;
+    }
+     .like-box {
+         position: absolute;
+         right: 10px;
+    }
      #heartIcon {
-         position: fixed;
-         right: 90px;
-         bottom: 90px;
          font-size: 21px;
          color: #bdb9b9;
     }
@@ -1020,15 +1023,11 @@
          position: absolute;
          top: 7px;
          width: 40px;
-        /* height: 10px;
-         */
     }
      #pause-resume {
          display: block;
     }
      .responsive-footer {
-        /* display: none;
-         */
          display: inline-flex;
          position: absolute;
          width: 100%;
@@ -1060,6 +1059,11 @@
          color: #aeaaaa;
     }
 }
+ @media screen and (max-width:700px) {
+     .like-box {
+         right: 40px;
+    }
+}
  @media screen and (max-width:426px) {
      .category {
          height: 300px;
@@ -1086,7 +1090,14 @@
          left: 2px;
     }
      .info-box {
-         padding: 0;
+         width: 75vw;
+    }
+     .like-box {
+         right: 30px;
+    }
+     #pause-resume {
+         position: absolute;
+         right: 0px;
     }
      .info-headings h3 {
          font-size: 15px;
@@ -1105,4 +1116,3 @@
          display: none;
     }
 }
- 
