@@ -1,5 +1,5 @@
 # 🎶 Spotify-Clone
-Hey there! 👋 I'm Samar, a budding web developer with a passion for music, mindfulness, and code. 🚀 Recently, I crafted a responsive Spotify clone that lets you groove to your favorite tunes seamlessly on any device. [Click here](https://samarsiddiqui.github.io/Spotify-clone/) and join me on this musical coding journey! 🎶💻
+Hey there! 👋 I'm Samar, a budding web developer with a passion for music, mindfulness, and code. 🚀 Recently, I crafted a responsive Spotify clone that lets you groove to your favorite tunes seamlessly on any device. [Click here](https://samarsiddiqui.github.io/Spotify/) and join me on this musical coding journey! 🎶💻
 ## 🦄 Features
 - Seamless Music Experience: Enjoy my favorite tunes anytime, anywhere.
 * Responsive Design: The clone adapts to various devices for a smooth user experience.
